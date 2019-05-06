@@ -96,7 +96,7 @@
 					<div class="container">
 						<div class="navbar-default">
 							<div class="navbar-header float-left">
-								<a class="navbar-brand text-uppercase" href="#"><img src="img/logo/f-logo.png" alt="logo"></a>
+								<a class="navbar-brand text-uppercase" href="#"><img src="{{  asset('img/logo/f-logo.png') }}" alt="logo"></a>
 							</div><!-- /.navbar-header -->
 							<div class="cart-search float-right ul-li">
 								<ul>
@@ -141,7 +141,7 @@
 							</nav>
 
 							<div class="mobile-menu">
-								<div class="logo"><a href="index-1.html"><img src="img/logo/logo.png" alt="Logo"></a></div>
+								<div class="logo"><a href="index-1.html"><img src="{{  asset('img/logo/logo.png') }}" alt="Logo"></a></div>
 								<nav>
 									<ul>
 										<li class="menu-item-has-children ul-li-block">
@@ -306,7 +306,7 @@
 
 						<div class="col-sm-4">
 							<div class="extra-pic text-center "  >
-								<img src="img/banner/wc-2.png" alt="img">
+								<img src="{{  asset('img/banner/wc-2.png') }}" alt="img">
 							</div>
 						</div>
 						<!-- /col-sm-6 -->
@@ -388,7 +388,7 @@
 						<div class="col-md-3">
 							<div class="best-course-pic-text relative-position "  >
 								<div class="best-course-pic relative-position">
-									<img src="img/course/bc-1.jpg" alt="">
+									<img src="{{  asset('img/course/bc-1.jpg') }}" alt="">
 									<div class="trend-badge-2 text-center text-uppercase">
 										<i class="fas fa-bolt"></i>
 										<span>Tendencia</span>
