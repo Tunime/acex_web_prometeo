@@ -28,3 +28,5 @@ Route::resource('tests', 'TestController');
 Route::resource('categorias', 'CategoriaController');
 
 Route::resource('carreras', 'CarreraController');
+
+Route::resource('cursos', 'CursoController');
