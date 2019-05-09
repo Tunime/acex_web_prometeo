@@ -24,3 +24,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::resource('tests', 'TestController');
+
+Route::resource('categorias', 'CategoriaController');
