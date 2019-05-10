@@ -11,9 +11,10 @@
 |
 */
 // Routes de testeo
-Route::get('/', function () {
+Route::resource('/', 'MainController');
+/*Route::get('/', function () {
     return view('new-view.main');
-});
+});*/
 // fin de rutas de testeo
 // Route::get('/', function () {
     // return view('welcome');
