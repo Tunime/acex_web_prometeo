@@ -17,4 +17,8 @@ class MainController extends Controller
         //dd($cursos);
         return view('new-view.main',['cursos'=>$cursos]);
     }
+     public function show($id)
+    {
+    	dd("sdasdf");
+    }
 }

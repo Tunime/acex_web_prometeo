@@ -8,6 +8,7 @@ use App\Repositories\CursoRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
+use DB;
 use Response;
 
 class CursoController extends AppBaseController
@@ -73,14 +74,20 @@ class CursoController extends AppBaseController
     public function show($id)
     {
         $curso = $this->cursoRepository->find($id);
+        
+        $infocurso = DB::table('cursos')
+            ->join('temarios','temarios.curso_id','=','cursos.id')
+            ->where('temarios.curso_id','=',$id)
+            ->get();
+        dd($infocurso);
 
-        if (empty($curso)) {
-            Flash::error('Curso not found');
+        // if (empty($curso)) {
+        //     Flash::error('Curso not found');
 
-            return redirect(route('cursos.index'));
-        }
+        //     return redirect(route('cursos.index'));
+        // }
 
-        return view('cursos.show')->with('curso', $curso);
+        // return view('cursos.show')->with('curso', $curso);
     }
 
     /**

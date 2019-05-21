@@ -403,7 +403,7 @@
 											</ul>
 										</div>
 										<div class="course-details-btn">
-											<a href="#">Detalles del curso <i class="fas fa-arrow-right"></i></a>
+											<a href="{{ route('cursos.show',$curso->id) }}">Detalles del curso <i class="fas fa-arrow-right"></i></a>
 										</div>
 										<div class="blakish-overlay"></div>
 									</div>
